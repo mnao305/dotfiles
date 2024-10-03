@@ -1,0 +1,38 @@
+# homebrew
+eval "$(/usr/local/bin/brew shellenv)"
+
+# antigen
+source $HOME/.local/bin/antigen.zsh
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# 読み込むzshプラグイン
+## git
+antigen bundle git
+## pip
+antigen bundle pip
+## mise
+antigen bundle mise
+## npm
+antigen bundle npm
+## bun
+antigen bundle bun
+## fish風のオートサジェスト
+antigen bundle zsh-users/zsh-autosuggestions
+## 補完
+antigen bundle zsh-users/zsh-completions
+## 見つからないときに提案してくれるやつ
+antigen bundle command-not-found
+## シンタックスハイライト
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme robbyrussell
+# Tell Antigen that you're done.
+antigen apply
+
+# starship
+eval "$(starship init zsh)"
+
+# mise
+eval "$(mise activate zsh)"
