@@ -1,8 +1,9 @@
 # homebrew
-eval "$(/usr/local/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # antigen
-source $HOME/.local/bin/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
