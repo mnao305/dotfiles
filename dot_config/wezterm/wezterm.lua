@@ -17,8 +17,8 @@ config.color_scheme = "nord"
 config.window_background_opacity = 0.93
 
 -- font
--- config.font = wezterm.font("Firge35Nerd Console")
-config.font_size = 13.0
+config.font = wezterm.font("HackGen Console NF")
+config.font_size = 16.0
 
 -- and finally, return the configuration to wezterm
 return config
